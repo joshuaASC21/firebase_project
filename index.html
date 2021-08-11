@@ -5,11 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firebase Project</title>
-    <!-- Link your CSS, and JS files here: -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAuckoIHuVof3Wpc0ehO4G_d_LiZsrix7E",
+    authDomain: "fir-blog-78121.firebaseapp.com",
+    projectId: "fir-blog-78121",
+    storageBucket: "fir-blog-78121.appspot.com",
+    messagingSenderId: "17907459460",
+    appId: "1:17907459460:web:a7ed6b651ffe1cfa7a69d1",
+    measurementId: "G-H0LVVPCG8F"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <!-- Link your CSS, and JS files here: -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     
 </head>
 <body>
+
+    <div class="header">
+
+        <img src="images/book.png">
+        <h1>Book Reviews</h1>
+        <img src="images/book2.png">
+    </div>
+   
+
     
+
+
+
+    <div class="userContainer">
+        <form>
+            <div class="inputContainer">
+                <div class="singleInput">
+                    <label for="username">Book name:</label>
+                    <input id="username" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="review">Review:</label>
+                    <input id="review" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="date">Date:</label>
+                    <input id = "date" type="text">
+                </div>
+    <button id="submit">Submit </button>
+
+    <div class="allReviews">
+        
+    </div>
 </body>
 </html>

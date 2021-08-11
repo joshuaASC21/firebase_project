@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(71, 21, 165);
+}
+h1 {
+    text-align: center;
+    color: wheat;
+}
+.allReviews{
+    border: wheat solid 4px;
+    color: rgba(255, 255, 255, 0.863);
+}
+.header {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+img{
+    width: 30%;
+    border: turquoise solid 14px;
+}
